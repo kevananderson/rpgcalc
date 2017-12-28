@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="CardCreator.Creature"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CardCreator"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600"
+             Visibility="Visible">
+    <Grid Width="600" Height="300">
+        <Label Content="Level" Margin="10,10,0,0" Style="{StaticResource LabelStyle}"/>
+        <ComboBox x:Name="Level" Margin="10,50,0,0" Width="70" Style="{StaticResource ComboStyle}" SelectionChanged="UpdateView"/>
+        
+        <Label Content="Tradoffs" Margin="110,10,0,0" Style="{StaticResource LabelStyle}"/>
+        <CheckBox x:Name="Trade00" Margin="123,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+        <CheckBox x:Name="Trade01" Margin="159,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+        <CheckBox x:Name="Trade02" Margin="195,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+        <CheckBox x:Name="Trade03" Margin="231,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+        <CheckBox x:Name="Trade04" Margin="267,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+        <CheckBox x:Name="Trade05" Margin="303,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+        <CheckBox x:Name="Trade06" Margin="339,60,0,0"  Style="{StaticResource CheckBoxStyle}" Checked="UpdateView" Unchecked="UpdateView"/>
+
+        <Rectangle Margin="0,92,0,0" Style="{StaticResource RectStyle}"/>
+        <Label Content="STR" Margin="0,88,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Label Content="GRT" Margin="0,111,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Rectangle Margin="0,138,0,0" Style="{StaticResource RectStyle}"/>
+        <Label Content="SPD" Margin="0,133,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Label Content="BAL" Margin="0,156,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Rectangle Margin="0,182,0,0" Style="{StaticResource RectStyle}"/>
+        <Label Content="FTH" Margin="0,179,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Label Content="FOC" Margin="0,201,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Rectangle Margin="0,228,0,0" Style="{StaticResource RectStyle}"/>
+        <Label Content="LCK" Margin="0,224,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Label Content="ALL" Margin="0,246,100,0" Style="{StaticResource TradeoffStyle}"/>
+        <Label x:Name="Tradeoff"  Margin="110,90,0,0" FontSize="20" FontFamily="Courier New" Width="400" Height="200" Style="{StaticResource LabelStyle}"/>
+
+    </Grid>
+</UserControl>

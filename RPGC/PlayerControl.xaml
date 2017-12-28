@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="RPGC.PlayerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RPGC"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Height="300" Width="300" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Rectangle x:Name="Baseboard" Height="170" Width="300" Margin="0,0,0,0" StrokeThickness="0" VerticalAlignment="Bottom"/>
+        <Rectangle x:Name="Backboard" Height="130" Width="300" Margin="0,0,0,0" StrokeThickness="0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1"></Border>
+        <Rectangle x:Name="Colorboard" Height="30" Width="80" Margin="0,10,10,0" StrokeThickness="0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <TextBox x:Name="CardReader" FontSize="18" VerticalContentAlignment="Center" Height="30" Width="100" Margin="0,50,0,0" Text="Card ID" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center"/>
+        <Button x:Name="Left" Margin="10,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Left" Style="{StaticResource ButtonStyle}" Click="Left_Click"/>
+        <Button x:Name="Right" Margin="0,50,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Content="Right" Style="{StaticResource ButtonStyle}" Click="Right_Click"/>
+        <Button x:Name="Up" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Up" Style="{StaticResource ButtonStyle}" Click="Up_Click"/>
+        <Button x:Name="Down" Margin="0,90,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Down" Style="{StaticResource ButtonStyle}" Click="Down_Click" />
+        <Button x:Name="ReadCard" Margin="0,90,10,0"  HorizontalAlignment="Right" VerticalAlignment="Top" Content="Enter" Style="{StaticResource ButtonStyle}" Click="ReadCard_Click"/>
+        <Label x:Name="State" Width="80" FontSize="18" Margin="10,10,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Content="STATE" />
+        
+        <Label Content="HP" Margin="10,135,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="HP" Content="-" Margin="50,135,0,0" Style="{StaticResource PointValueStyle}"/>
+        <Label Content="/" Margin="100,135,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="HP_Max" Content="-" Margin="120,135,0,0" HorizontalContentAlignment="Left" Style="{StaticResource PointValueStyle}"/>
+        <Label Content="MP" Margin="10,180,0,0"  Style="{StaticResource PointStyle}"/>
+        <Label x:Name="MP" Content="-" Margin="50,180,0,0"  Style="{StaticResource PointValueStyle}"/>
+        <Label Content="/" Margin="100,180,0,0"  Style="{StaticResource PointStyle}"/>
+        <Label x:Name="MP_Max" Content="-" Margin="120,180,0,0" HorizontalContentAlignment="Left" Style="{StaticResource PointValueStyle}"/>
+
+        <Label Content="Level" Margin="180,135,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="Level" Content="-" Margin="230,135,0,0" Style="{StaticResource PointValueStyle}"/>
+        <Label Content="Exp" Margin="180,180,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="Exp" Content="-" Margin="230,180,0,0"  Style="{StaticResource PointValueStyle}"/>
+        
+        <Label Content="STR:" Margin="10,0,0,50" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Strength" Content="-" Margin="40,0,0,50" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="GRT:" Margin="82,0,0,50" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Grit" Content="-" Margin="112,0,0,50" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="SPD:" Margin="150,0,0,50" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Speed" Content="-" Margin="180,0,0,50" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="BAL:" Margin="222,0,0,50" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Balance" Content="-" Margin="252,0,0,50" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="FTH:" Margin="10,0,0,10" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Faith" Content="-" Margin="40,0,0,10" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="FOC:" Margin="82,0,0,10" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Focuss" Content="-" Margin="112,0,0,10" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="LCK:" Margin="150,0,0,10" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Luck" Content="-" Margin="180,0,0,10" Style="{StaticResource StatValueStyle}"/>
+        <Label Content="ALL:" Margin="222,0,0,10" Style="{StaticResource StatStyle}"/>
+        <Label x:Name="Allure" Content="-" Margin="252,0,0,10" Style="{StaticResource StatValueStyle}"/>
+    </Grid>
+</UserControl>

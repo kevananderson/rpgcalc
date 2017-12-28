@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="RPGC.EnemyControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RPGC"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="400">
+    <Grid Height="200" Width="400" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Border BorderBrush="Black" BorderThickness="1"></Border>
+        <Rectangle x:Name="Colorboard" Height="30" Width="80" Fill="Peru" Margin="210,10,0,0" StrokeThickness="0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="CardReader" FontSize="18" Height="30" Width="100" Margin="100,50,0,0" Text="Card ID" TextWrapping="NoWrap" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center"/>
+        <Button x:Name="Left" Margin="10,50,0,0" Content="Left" Style="{StaticResource EnemyButtonStyle}" Click="Left_Click"/>
+        <Button x:Name="Right" Margin="210,50,10,0" Content="Right" Style="{StaticResource EnemyButtonStyle}" Click="Right_Click"/>
+        <Button x:Name="Up" Margin="110,10,0,0" Content="Up" Style="{StaticResource EnemyButtonStyle}" Click="Up_Click"/>
+        <Button x:Name="Down" Margin="110,90,0,0" Content="Down" Style="{StaticResource EnemyButtonStyle}" Click="Down_Click" />
+        <Button x:Name="ReadCard" Margin="210,90,0,0"  Content="Enter" Style="{StaticResource EnemyButtonStyle}" Click="ReadCard_Click"/>
+        <Label x:Name="State" Width="80" FontSize="18" Margin="10,10,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Content="STATE" />
+
+        <Label Content="HP" Margin="10,125,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="HP" Content="-" Margin="50,125,0,0" Style="{StaticResource PointValueStyle}"/>
+        <Label Content="/" Margin="100,125,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="HP_Max" Content="-" Margin="120,125,0,0" HorizontalContentAlignment="Left" Style="{StaticResource PointValueStyle}"/>
+        <Label Content="MP" Margin="10,160,0,0"  Style="{StaticResource PointStyle}"/>
+        <Label x:Name="MP" Content="-" Margin="50,160,0,0"  Style="{StaticResource PointValueStyle}"/>
+        <Label Content="/" Margin="100,160,0,0"  Style="{StaticResource PointStyle}"/>
+        <Label x:Name="MP_Max" Content="-" Margin="120,160,0,0" HorizontalContentAlignment="Left" Style="{StaticResource PointValueStyle}"/>
+
+        <Label Content="Level" Margin="200,143,0,0" Style="{StaticResource PointStyle}"/>
+        <Label x:Name="Level" Content="-" Margin="300,137,0,0" FontSize="24" Style="{StaticResource PointStyle}"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="RPGC.HexControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RPGC"
+             mc:Ignorable="d" 
+             d:DesignHeight="72" d:DesignWidth="72">
+    <Grid>
+        <Ellipse x:Name="Piece" Height="72" Width="72" Fill="White" Stroke="Black" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="Text" Content="#" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Ellipse x:Name="EnemyMove" Fill="Peru" Stroke="Black" Style="{StaticResource MoveStyle}"/>
+        <Ellipse x:Name="Player1Move" Fill="Red" Stroke="Black" Style="{StaticResource MoveStyle}"/>
+        <Ellipse x:Name="Player2Move" Fill="Green" Stroke="Black" Style="{StaticResource MoveStyle}"/>
+        <Ellipse x:Name="Player3Move" Fill="Blue" Stroke="Black" Style="{StaticResource MoveStyle}"/>
+        <Ellipse x:Name="Player4Move" Fill="Yellow" Stroke="Black" Style="{StaticResource MoveStyle}"/>
+        <Ellipse x:Name="EnemyTarget" Fill="Peru" Stroke="Black" Margin="23,5,0,0"  Style="{StaticResource TargetStyle}"/>
+        <Ellipse x:Name="Player1Target" Fill="Red" Stroke="Black" Margin="10,10,0,0"  Style="{StaticResource TargetStyle}"/>
+        <Ellipse x:Name="Player2Target" Fill="Green" Stroke="Black" Margin="37,10,0,0"  Style="{StaticResource TargetStyle}"/>
+        <Ellipse x:Name="Player3Target" Fill="Blue" Stroke="Black" Margin="10,37,0,0"  Style="{StaticResource TargetStyle}"/>
+        <Ellipse x:Name="Player4Target" Fill="Yellow" Stroke="Black" Margin="37,37,0,0"  Style="{StaticResource TargetStyle}"/>
+    </Grid>
+</UserControl>
